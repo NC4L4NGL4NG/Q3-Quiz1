@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <title>Quiz 1</title>
+    <style>
+    	body {
+  font-family: "Lexend Giga", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align: center;
+   margin: 0;
+            padding: 0;
+            background: url(https://i.pinimg.com/originals/e6/0c/4a/e60c4ae6305c1b5d57e9954166761db9.gif);
+            color:blue;
+            background-size:cover;
+
+        }
+.box-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 20px;                
+    flex-wrap: wrap;          
+    width: 192%;              
+    margin-top: 20px;         
+}
+
+   .container {
+    margin: 50px auto;
+    width: 900%;
+    max-width: 990px; 
+    background: lightcyan;
+    padding: 40px; 
+    border-radius: 15px;
+    box-shadow: 400px
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+   		 .box {
+            border: 1px solid #333;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            background: #fff;
+            display: inline-block;
+            width: 50;
+            height: 50;
+        }
+
+        .diagram {
+            margin: 20px 0;
+        }
+    .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .area-button {
+            background-color: #ffd369;
+            color: #000;
+        }
+
+        .circumference-button {
+            background-color: #82caff;
+            color: #000;
+        }
+
+        .refresh-button {
+            background-color: #ff6f6f;
+            color: #fff;
+        }
+         .result {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            margin-top: 20px;
+            background-color: #ffe4c4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Javascript Operators</h1>
+        <p>If A = 72 and B = 9.6</p>
+        
+      <div class="box-container">
+    <div class="box">
+        <h3>Arithmetic Operators</h3>
+        <p>Exponent: <span id="exp"></span></p>
+        <p>Modulo: <span id="mod"></span></p>
+        <button onclick="showArithmetic()">Show Answer</button>
+    </div>
+    <div class="box">
+        <h3>Comparison Operators</h3>
+        <p>Is A greater than B? <span id="greater"></span></p>
+        <p>Is A equal to B? <span id="equal"></span></p>
+        <button onclick="showComparison()">Show Answer</button>
+    </div>
+    <div class="box">
+        <h3>Logical Operators</h3>
+        <p>True or False: A > B and B > 10? <span id="logic1"></span></p>
+        <p>True or False: A > B or B > 10? <span id="logic2"></span></p>
+        <button onclick="showLogical()">Show Answer</button>
+    </div>
+</div>
+<br>
+        <button class="refresh-button" onclick="refreshPage()">Refresh</button>
+        <p> AY 2024-2025 | Neriza Calanglang | 9-Sapphire | </p>
+
+    </div>
+
+    <script>
+    const A = 72;
+    const B = 9.6;
+
+    function showArithmetic() {
+        document.getElementById("exp").innerText = A ** B;
+        document.getElementById("mod").innerText = A % B;
+    }
+
+    function showComparison() {
+        document.getElementById("greater").innerText = A > B;
+        document.getElementById("equal").innerText = A === B;
+    }
+
+    function showLogical() {
+        document.getElementById("logic1").innerText = A > B && B > 10;
+        document.getElementById("logic2").innerText = A > B || B > 10;
+    }
+
+    function refreshPage() {
+        location.reload();
+    }
+</script>
+
+</body>
+</html>

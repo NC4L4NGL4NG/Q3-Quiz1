@@ -1,0 +1,95 @@
+body {
+  font-family: "Lexend Giga", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align: center;
+   margin: 0;
+            padding: 0;
+            background: url(https://i.pinimg.com/originals/e6/0c/4a/e60c4ae6305c1b5d57e9954166761db9.gif);
+            color:blue;
+            background-size:cover;
+
+        }
+.box-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 20px;                
+    flex-wrap: wrap;          
+    width: 192%;              
+    margin-top: 20px;         
+}
+
+   .container {
+    margin: 50px auto;
+    width: 900%;
+    max-width: 990px; 
+    background: lightcyan;
+    padding: 40px; 
+    border-radius: 15px;
+    box-shadow: 400px
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+         .box {
+            border: 1px solid #333;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            background: #fff;
+            display: inline-block;
+            width: 50;
+            height: 50;
+        }
+
+        .diagram {
+            margin: 20px 0;
+        }
+    .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .area-button {
+            background-color: #ffd369;
+            color: #000;
+        }
+
+        .circumference-button {
+            background-color: #82caff;
+            color: #000;
+        }
+
+        .refresh-button {
+            background-color: #ff6f6f;
+            color: #fff;
+        }
+         .result {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            margin-top: 20px;
+            background-color: #ffe4c4;
+            padding: 10px;
+            border-radius: 5px;
+        }
